@@ -27,6 +27,7 @@ dependencies {
     testImplementation 'com.codeborne:selenide:6.6.3'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
     testImplementation 'io.qameta.allure:allure-selenide:2.18.1'
+    testImplementation 'org.slf4j:slf4j-simple:2.0.9'
 }
 
 tasks.withType(Test) {
