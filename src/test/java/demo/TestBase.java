@@ -21,6 +21,7 @@ public class TestBase {
         Configuration.browserCapabilities = options;
         Configuration.timeout = 10000; // Увеличиваем таймаут до 10 секунд
         Configuration.browserSize = "1920x1080";
+        Configuration.remote = "http://localhost:32768/wd/hub";
 
     }
 
