@@ -50,7 +50,7 @@ public class RegistrationTest extends TestBase{
                     $("label[for='hobbies-checkbox-2']").click(); // Reading
 
                     // Загрузка картинки
-                    $("#uploadPicture").uploadFile(new File("C:/Users/tigre/1.png"));
+
 
                     // Адрес
                     $("#currentAddress").setValue("SARATOV-SPB");
