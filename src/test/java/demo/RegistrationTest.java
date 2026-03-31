@@ -32,7 +32,7 @@ public class RegistrationTest extends TestBase{
                     $("#userEmail").setValue("nikita@mail.ru");
                     $("#userNumber").setValue("8917323254");
 
-                    // Выбор пола (используем правильные селекторы)
+                    // Выбор пола
                     $("label[for='gender-radio-1']").click(); // Male
 
                     // Дата рождения
@@ -41,21 +41,17 @@ public class RegistrationTest extends TestBase{
                     $(".react-datepicker__year-select").selectOption("2025");
                     $(".react-datepicker__day--001").click();
 
-                    // Subjects
+
                     $("#subjectsInput").setValue("Maths");
                     $("#subjectsInput").pressEnter();
 
-                    // Hobbies (используем правильные селекторы для чекбоксов)
                     $("label[for='hobbies-checkbox-1']").click(); // Sports
                     $("label[for='hobbies-checkbox-2']").click(); // Reading
 
-                    // Загрузка картинки
 
-
-                    // Адрес
                     $("#currentAddress").setValue("SARATOV-SPB");
 
-                    // State и City (используем правильные селекторы)
+                    // State и City
                     $("#state").click();
                     $("#react-select-3-option-0").click(); // NCR
 
