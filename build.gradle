@@ -28,6 +28,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
     testImplementation 'io.qameta.allure:allure-selenide:2.18.1'
     testImplementation 'org.slf4j:slf4j-simple:2.0.9'
+    testImplementation 'org.aeonbits.owner:owner:1.0.12' //
     testImplementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
 }
 
@@ -45,8 +46,14 @@ tasks.withType(Test) {
 }
 
 
-task test6(type: Test){
-    useJUnitPlatform{
+task test6(type: Test) {
+    useJUnitPlatform {
         includeTags "test6"
     }
 }
+
+    task owner_test(type: Test) {
+        useJUnitPlatform {
+            includeTags "owner"
+        }
+    }
