@@ -32,6 +32,7 @@ dependencies {
 }
 
 tasks.withType(Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform()
 
     testLogging {
@@ -41,4 +42,11 @@ tasks.withType(Test) {
 
     // Добавьте эту строку для явного указания aspectjWeaver
     systemProperty "allure.aspects.enabled", "true"
+}
+
+
+task test6(type: Test){
+    useJUnitPlatform{
+        includeTags "test6"
+    }
 }
