@@ -67,6 +67,6 @@ public class RegistrationTest extends TestBase{
                         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
                     });
         // Небольшая задержка для просмотра результата
-        sleep(20000);
+        sleep(2000);
     }
 }

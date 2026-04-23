@@ -1,0 +1,10 @@
+curl -X POST \
+     -H 'Content-Type: application/json' \
+     -d '{"chat_id": "1164152855", "text": "This is a test from curl", "disable_notification": false}' \
+     https://api.telegram.org/bot8649592202:AAFpVwlsc_LsCIsqjd8cHW66gDeKDmz2-NE/sendMessage
+
+java "-DconfigFile=C:\Users\tigre\IdeaProjects\jenkins_tran\notifications\telegram.json" -jar C:\Users\tigre\IdeaProjects\jenkins_tran\allure-notifications-4.11.0.jar
+
+
+
+//настроить хранение отчетов не в дефолтной папке.
